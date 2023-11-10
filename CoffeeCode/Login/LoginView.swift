@@ -1,4 +1,5 @@
 import SwiftUI
+import Core
 
 struct LoginView: View {
     @StateObject var viewModel: LoginViewModel

@@ -1,4 +1,5 @@
 import SwiftUI
+import FirebaseAuth
 
 class LoginViewModel: ObservableObject {
     private let authService: AuthService
