@@ -1,22 +1,19 @@
 //
-//  NavigationController.swift
-//  FilmsList
+//  File.swift
+//  
 //
-//  Created by Maksim Zenkov on 27.10.2023.
+//  Created by Maksim Zenkov on 11.11.2023.
 //
 
 import Foundation
 import UIKit
-import SwiftUI
 
-public final class HostingController: UIHostingController<AnyView> {
-    public var customStatusBarStyle: UIStatusBarStyle = .darkContent
-    
+public class NavigationController: UINavigationController {
     public override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     public override var preferredStatusBarStyle: UIStatusBarStyle {
-        return customStatusBarStyle
+        return (topViewController as? HostingController)?.customStatusBarStyle ?? .darkContent
     }
 }

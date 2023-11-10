@@ -61,7 +61,8 @@ struct MainView: View {
             //Choose .hud to toast alert from the top of the screen
             //AlertToast(displayMode: .hud, type: .regular, title: "Message Sent!")
         }
-        .hostingControllerSetup { viewController in }
+        .animation(.default, value: authService.isAuthorized)
+//        .hostingControllerSetup { viewController in }
     }
     
     

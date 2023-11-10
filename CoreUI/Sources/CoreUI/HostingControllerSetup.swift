@@ -3,11 +3,11 @@ import UIKit
 import Core
 
 extension View {
-    public func hostingControllerSetup(_ setup: @escaping (UIHostingController<AnyView>) -> Void) -> some View {
+    public func hostingControllerSetup(_ setup: @escaping (HostingController) -> Void) -> some View {
         ZStack {
             ParentViewControllerFinder { viewController in
-                guard let viewController = viewController as? UIHostingController<AnyView> else {
-                    assertionFailure("Missing parent UIHostingController!")
+                guard let viewController = viewController as? HostingController else {
+//                    assertionFailure("Missing parent HostingController!")
                     return
                 }
                 setup(viewController)

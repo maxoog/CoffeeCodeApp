@@ -1,6 +1,7 @@
 import Combine
 import Alamofire
 import Foundation
+import Core
 
 class Client {
     lazy var session: Session = {

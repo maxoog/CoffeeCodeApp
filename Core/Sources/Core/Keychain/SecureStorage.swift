@@ -4,6 +4,8 @@ import Security
 public final class SecureStorage {
     let tokenKey = "AUTH_TOKEN"
     
+    public init() {}
+    
     enum KeychainError: Error {
         case itemAlreadyExist
         case itemNotFound

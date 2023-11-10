@@ -23,8 +23,6 @@
 		B17D91442AEC452100E7E93C /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D91432AEC452100E7E93C /* ScreenFactory.swift */; };
 		B17D91482AEC45EA00E7E93C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D91472AEC45EA00E7E93C /* AuthService.swift */; };
 		B17D914A2AEC47D900E7E93C /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D91492AEC47D900E7E93C /* Client.swift */; };
-		B17D914D2AEC480900E7E93C /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D914C2AEC480900E7E93C /* SecureStorage.swift */; };
-		B17D914F2AEC481900E7E93C /* SecureStorage+Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D914E2AEC481900E7E93C /* SecureStorage+Token.swift */; };
 		B18133782AFEA35D00B497A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18133772AFEA35D00B497A8 /* SceneDelegate.swift */; };
 		B18F3D592AF64DE400940DC4 /* CoffeePointCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F3D582AF64DE400940DC4 /* CoffeePointCard.swift */; };
 		B1AFAC5B2AF69EBB0007F8E4 /* AppMetricaAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B1AFAC5A2AF69EBB0007F8E4 /* AppMetricaAnalytics */; };
@@ -52,8 +50,6 @@
 		B17D91432AEC452100E7E93C /* ScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFactory.swift; sourceTree = "<group>"; };
 		B17D91472AEC45EA00E7E93C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B17D91492AEC47D900E7E93C /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		B17D914C2AEC480900E7E93C /* SecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
-		B17D914E2AEC481900E7E93C /* SecureStorage+Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecureStorage+Token.swift"; sourceTree = "<group>"; };
 		B18133772AFEA35D00B497A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B18F3D582AF64DE400940DC4 /* CoffeePointCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePointCard.swift; sourceTree = "<group>"; };
 		B1BC5EC92AF177B9001B2DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,18 +150,8 @@
 				B17D91472AEC45EA00E7E93C /* AuthService.swift */,
 				B17AE7322AF8F6C8009C04F3 /* InvoiceScannerService.swift */,
 				B17D91492AEC47D900E7E93C /* Client.swift */,
-				B17D914B2AEC47FE00E7E93C /* Keychain */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		B17D914B2AEC47FE00E7E93C /* Keychain */ = {
-			isa = PBXGroup;
-			children = (
-				B17D914C2AEC480900E7E93C /* SecureStorage.swift */,
-				B17D914E2AEC481900E7E93C /* SecureStorage+Token.swift */,
-			);
-			path = Keychain;
 			sourceTree = "<group>";
 		};
 		B1AE3CDC2AF7B3C8008C9A6D /* Хлам */ = {
@@ -273,7 +259,6 @@
 			files = (
 				B17D91402AEC434D00E7E93C /* Verification.swift in Sources */,
 				B1BC5ECA2AF177B9001B2DD4 /* AppDelegate.swift in Sources */,
-				B17D914F2AEC481900E7E93C /* SecureStorage+Token.swift in Sources */,
 				B17AE7332AF8F6C8009C04F3 /* InvoiceScannerService.swift in Sources */,
 				B18F3D592AF64DE400940DC4 /* CoffeePointCard.swift in Sources */,
 				B17D913C2AEC431B00E7E93C /* LoginViewModel.swift in Sources */,
@@ -287,7 +272,6 @@
 				B17D91112AEC42DD00E7E93C /* MainView.swift in Sources */,
 				B17D91442AEC452100E7E93C /* ScreenFactory.swift in Sources */,
 				B17D914A2AEC47D900E7E93C /* Client.swift in Sources */,
-				B17D914D2AEC480900E7E93C /* SecureStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,11 +405,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoffeeCode/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,9 +416,11 @@
 				MARKETING_VERSION = 1.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = maxood.CoffeeCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -453,11 +437,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoffeeCode/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,9 +448,11 @@
 				MARKETING_VERSION = 1.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = maxood.CoffeeCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
